@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Retirado de : http://www.projetotifacil.com/2018/07/como-fazer-um-layout-basico-usando-html.html -->
+<html>
+<meta charset="utf-8"/>               <!-- Decodificação para Português -->
+<head>
+<title>Pagina</title>  <!-- Título da página -->
+<style>
+ 
+ body{                            /* Estilo utilizado no corpo do site */
+          text-decoration: underline; /* sublinhado */
+          font-size:20px;             /* Tamanho da fonte */
+          text-align: center;         /* Define a posição do texto no centro */
+          padding: 0px;
+          margin: 0px;
+ }
+     #cabecalho{
+          width: 100%;                /* Largura 100% da página */
+          height: 100px;              /* Altura */
+          /*border: 1px solid black;*/    /* Borda */
+          background: #caacfa;        /* Cor de fundo do cabeçalho */
+}
+     #menu{
+          float: left;                 /* Posição do Menu, esquerdo */
+          min-height: calc(100vh - 150px);           /* Tamanho mínimo 300 píxels */
+          width: 200px;                /* Largura */
+          /*border: 1px solid black;*/     /* Borda */
+          background: #9159b6;         /* Cor de fundo do menu */
+}
+     #conteudo{
+	     width: 100%;                  /* Largura 100% da página */
+          min-height: calc(100vh - 150px);            /* Tamanho mínimo 300 píxels */
+          /*border: 1px solid black;*/    /* Borda */
+          background: rgb(255, 255, 255);          /* Cor de fundo do conteúdo */
+}
+     #rodape{
+		width: 100%;                 /* Largura 100% da página */
+          height: 50px;                /* Altura do rodapé */
+          /*border: 1px solid black;*/     /* Borda */
+          background: #e6d6ff;         /* Cor de fundo do rodapé */
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #9159b6;
+}
+
+/*li {
+  float: left;
+}*/
+
+li a {
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: 1px solid #56198f;
+}
+
+li a:hover {
+  background-color: #480b64;
+  border: 1px solid #882ea3;
+  border-radius: 10px;
+  color: #fff;
+}
+</style>
+</head>
+<body>
+<div id="cabecalho">DogsPets</div>   <!-- Cabeçalho -->
+<div id="menu">Menu                   <!-- Menu -->                         
+     <ul>                             <!-- Lista de links -->
+          <li><a href="#">Página Inicial</a></li>
+          <li><a href="#">Google</a></li>
+          <li><a href="#">IFMT</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+     </ul>
+</div>
+<div id="conteudo">Conteúdo</div>     <!-- Conteúdo -->
+<div id="rodape">2023 DogsPets - Tel.: (65) 12345 - 6789 - Todos os direitos reservados</div>         <!-- Rodapé -->
+</body>
+</html>

@@ -1,0 +1,63 @@
+*{         /*configurações globais da CSS*/
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: white;
+    
+}
+
+body{                            /* Estilo utilizado no corpo do site */
+    font-size:20px;             /* Tamanho da fonte */
+    text-align: justify;         /* Define a posição do texto */
+    background-image: linear-gradient(180deg, #340c75 0%, #800b8a 70%, #b90673 100%);  /* cor do fundo em degrade. tem o left, right, top e botton ou em graus "deg" */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+h1{
+    text-align: center;    /* texto no centro */
+}
+
+#forms{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 90%;   /* Largura 100% da página */
+    height: 2em;   /* Altura */
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+#birthday{
+    color: #777777;
+}
+
+.forms{
+    width: 50%;
+}
+
+.textname{
+    width: 90%;   /* Largura 100% da página */
+    height: 2em;   /* Altura */
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.barras{
+    width: 90%;   /* Largura 100% da página */
+    height: 2em;   /* Altura */
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+/*
+button{
+    margin-top: 0rem;
+    font-size: 1.2rem;
+    background-color: #a866ff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+
+}

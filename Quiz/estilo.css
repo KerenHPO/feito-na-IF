@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{ 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'pixel', Times, serif;
+
+}
+
+.header {
+    padding: 20px;
+}
+
+@font-face {
+    font-family: 'mario';
+    src: url('SuperMario256.ttf') format('TrueType');
+
+   
+}
+
+@font-face {
+    font-family: 'pixel';
+    src: url('pixel.ttf') format('TrueType'); 
+}
+
+#intro{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+    padding: 2rem;
+    font-size: 1.5rem;
+    background: #0a1606b9;
+    border-radius: 1rem;
+    border-bottom: solid 0.2rem #ceffbb;
+    text-align: center;
+    color: #ffffff;
+    width: 25rem;
+    height: 300px;
+    font-family: 'mario', Times, serif;
+}
+    
+
+
+h2{
+    color: white;
+    text-align: justify;
+}
+
+.cabeçalho{
+    grid-area: header;
+    padding: 0.8rem 0;
+    text-align: center;
+    font-size: 3rem;
+    background: rgba(255, 241, 164, 0.658);
+    color: #f0fff3;
+    font-family: 'mario', Times, serif;
+}
+
+#img{
+    width: 5.5rem;
+    height: 5.2rem;
+    position: relative;
+    align-self: normal;
+    
+}
+
+.center{
+
+    margin: 0rem auto;
+    width: 90vw;
+    padding: 2rem;
+    background: #becdff;
+    cursor: default;
+    text-align: center;
+    font-size: 2.2rem;
+    color: #000000;
+}
+
+.centro{
+   
+    margin: 3rem auto;
+    width: 90vw;
+    padding: 2rem;
+    background: #005e08a8;
+    cursor: default;
+    border-radius: 1rem;
+
+}
+
+
+#perg{
+    margin-bottom: 1rem;
+}
+
+.alternativas{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    border-bottom: solid 0.1rem #d0ff00;
+    width: 15rem;
+    background: #78ff9ae3;
+    border-radius: 1rem;
+    color: #ffffff;
+    font-family: 'mario', Times, serif;
+}
+
+.alternativas:hover{
+    color: rgb(8, 34, 11);
+}
+
+ol{
+    position: relative;
+    padding: 0 1.5rem;
+    color: #000000;
+}
+
+span{
+    display: block;
+    padding: 0.1rem 0.7rem;
+    border-radius: 1rem;
+}
+
+a{
+    color: #ffffff;
+    font-family: 'pixel', Times, serif;
+    font-size: 2rem;
+}
+ 
+/*
+a:hover{
+    color: #198694;
+}
+*/
+
+button{
+    margin-top: 0rem;
+    font-size: 1.2rem;
+    background-color: #0e2b1900;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #0511049c;
+  }
+
