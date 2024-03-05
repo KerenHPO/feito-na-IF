@@ -1,0 +1,30 @@
+/*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{ 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'pixel', Times, serif;
+
+}
+*/
+
+
+.button{
+    background-color: #0e3fc4;
+    border-radius: 12px;
+
+}
+
+.at_num {
+    top: 4px;
+    right: 5px;
+    font-size: 10px;
+    text-align: right;
+    
+}
