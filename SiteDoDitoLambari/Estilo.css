@@ -1,0 +1,264 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e2efff;
+    color: #edfeff;
+}
+
+.topo {
+    background-color: #04a5d6;
+    color: #000000;
+    padding: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 4px 8px 0 rgba(0, 27, 43, 0.247), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Adiciona um espaçamento no conteúdo para não ficar escondido atrás do cabeçalho */
+body {
+    margin-top: 80px; /* Ajuste conforme a altura do cabeçalho */
+}
+
+.logo h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-align: left;
+}
+
+
+.logo p {
+    margin: 0;
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+/* Botões de navegação */
+.nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 18px;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.nav:hover {
+    opacity: 1;
+}
+
+.left-nav {
+    left: 10px;
+}
+
+.right-nav {
+    right: 10px;
+}
+
+/* Esconde a barra de rolagem */
+.pratos::-webkit-scrollbar {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration:none;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.destaque {
+    position: relative;
+    height: 700px;
+    background: url('Fundo.png') no-repeat center center;
+    background-size: cover;
+    color: #ecf0f1;
+}
+
+.destaque .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 13, 27, 0.603);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.destaque h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.cardapio {
+    padding: 50px 20px;
+    background-color: #04a5d6;
+    text-align: center;
+}
+
+.cardapio h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.pratos-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Contêiner de pratos com rolagem horizontal */
+.pratos {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+}
+
+.prato {
+    flex: 0 0 250px; /* Largura fixa de cada prato */
+    margin-right: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    text-align: center;
+}
+
+.prato:hover {
+    transform: scale(1.05);
+}
+
+.prato img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.prato h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.prato p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.prato button {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.prato button:hover {
+    background-color: #f39c12;
+}
+
+/* Carrinho de Compras */
+.carrinho {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+}
+
+.carrinho h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #23598f;
+}
+
+.carrinho ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.carrinho ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.carrinho p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.carrinho button {
+    background-color: #1c4064;
+    color: #ecf0f1;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carrinho button:hover {
+    background-color: #f39c12;
+}
+
+
+.rodape {
+    text-align: center;
+    padding: 20px;
+    background-color: #006f91;
+    color: #ecf0f1;
+    margin-top: 40px;
+    padding: 20px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pratos {
+        flex-direction: column;
+    }
+}

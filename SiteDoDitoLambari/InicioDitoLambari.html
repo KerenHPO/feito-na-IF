@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dito Lambari - Pratos Cuiabanos</title>
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+    <header id="inicio" class="topo">
+        <div class="logo">
+            <img src="log.png" alt="logo Dito Lambari" height="100px" width="">
+            <p>Pratos Cuiabanos de Excelência</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Home</a></li>
+                <li><a href="#Cardapio">Cardápio</a></li>
+                <li><a href="#pedido">Pedido</a></li>
+                <li><a href="#Sobre.html">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="destaque">
+        <div class="overlay">
+            <h2>Bem-vindo ao Dito Lambari</h2>
+            <p>Experimente o melhor da culinária cuiabana.</p>
+        </div>
+    </section>
+
+    <section id="Cardapio" class="cardapio">
+        <h2>Cardápio</h2>
+        <div class="pratos-container">
+            <div class="pratos">
+                <div class="prato">
+                    <img src="arroz.png" alt="Arroz maria isabel">
+                    <h3>Arroz maria isabel</h3>
+                    <p>Maria Isabel é um prato típico da culinária cuiabana, que consiste em uma saborosa mistura de arroz e carne de sol cortada em cubos.</p>
+                    <button class="add-to-cart" data-name="Maria Isabel" data-price="50.00">Adicionar ao Carrinho</button>
+                </div>
+                <div class="prato">
+                    <img src="mojica.png" alt="mojica de pintado ">
+                    <h3>Mojica de pintado </h3>
+                    <p>A mojica de pintado é um cozido de pintado cortado em cubos com um caldo engrossado por mandioca.</p>
+                    <button class="add-to-cart" data-name="Mojica de pintado" data-price="60.00">Adicionar ao Carrinho</button>
+                </div>
+                <div class="prato">
+                    <img src=".png" alt="Paçoca de pilão">
+                    <h3>Paçoca de pilão </h3>
+                    <p> Um dos principais pratos de nossa culinária tradicional. A paçoca, socada no pilão, mistura de carne seca , farinha e condimentos.</p>
+                    <button class="add-to-cart" data-name="Paçoca de pilão" data-price="30.00">Adicionar ao Carrinho</button>
+                </div>
+                <div class="prato">
+                    <img src="" alt="Farofa de banana">
+                    <h3>Farofa de banana </h3>
+                    <p>A mojica de pintado é um cozido de pintado cortado em cubos com um caldo engrossado por mandioca.</p>
+                    <button class="add-to-cart" data-name="Farofa de banana" data-price="30.00">Adicionar ao Carrinho</button>
+                </div>
+                <div class="prato">
+                    <img src="mojica.png" alt="Carne seca com banana">
+                    <h3>Carne seca com banana </h3>
+                    <p>A mojica de pintado é um cozido de pintado cortado em cubos com um caldo engrossado por mandioca.</p>
+                    <button class="add-to-cart" data-name="Carne seca com banana" data-price="90.00">Adicionar ao Carrinho</button>
+                </div>
+                <div class="prato">
+                    <img src="mojica.png" alt="Arroz com pequi">
+                    <h3>Arroz com pequi </h3>
+                    <p>A mojica de pintado é um cozido de pintado cortado em cubos com um caldo engrossado por mandioca.</p>
+                    <button class="add-to-cart" data-name="Arroz com pequi" data-price="90.00">Adicionar ao Carrinho</button>
+                </div>
+            <!-- Adicione mais pratos conforme necessário -->
+            </div>
+        </div>
+    </section>
+    <section id="pedido" class="pedidos">
+        <h2>Faça seu Pedido</h2>      
+        <div class="carrinho">
+            <h3>Pedidos <img src="carrinho.ico" alt="carrinho" height="50px" width=""></h3>
+            <ul id="cart-items">
+                <!-- Itens do carrinho serão adicionados aqui -->
+            </ul>
+            <p>Total: R$ <span id="total-price">0.00</span></p>
+            <button id="checkout">Finalizar Pedido</button>
+        </div>
+    </section>
+    
+    <section id="contato" class="rodape">
+        <h3>Contato</h3>
+        <p>Endereço: Rua das Águas, 456 - Cuiabá, MT</p>
+        <p>Telefone: (65) 1234-5678</p>
+        <p>Email: contato@ditolambari.com.br</p>
+    </section>
+
+    <footer class="rodape">
+        <p>Dito Lambari &copy; 2024</p>
+        <p>Endereço: Rua das Águas, 456 - Cuiabá, MT</p>
+        <p>Telefone: (65) 9 9876-5432</p>
+    </footer>
+
+    <script src="botao.js"></script>
+</body>
+</html>
