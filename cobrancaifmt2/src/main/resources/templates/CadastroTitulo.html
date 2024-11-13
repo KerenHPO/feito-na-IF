@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<title>Insert title here</title>
+	<title>Keke</title>
 </head>
 
 <forbody>
@@ -14,50 +14,51 @@
 			<img src="/images/ifmtlogo.jpg" width="50" height="50" alt="IFMT" />
 		</a>
 	</nav>
-	<div class="card">
-
-		<div class="card-header tux-titulo-panel"> <span class="tux-titulo-panel">Novo titulo</span>
+	<form action="/titulos" method="POST">
+		<div class="card">
+	
+			<div class="card-header tux-titulo-panel"> <span class="tux-titulo-panel">Novo titulo</span>
+			</div>
+	
+			<div class="card-body">
+	
+				<div class="form-group row">
+					<label for="descricao" class="col-sm-2 col-form-label">Descrição</label>
+					<div class="col-sm-4">
+						<input type="text" class="form-control" id="descricao" placeholder="Descricao">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="dataVencimento" class="col-sm-2 col-form-label">Data
+						de Vencimento</label>
+					<div class="col-sm-2">
+						<input type="text" class="form-control" id="dataVencimento" />
+					</div>
+				</div>
+	
+				<div class="form-group row">
+					<label for="valor" class="col-sm-2 col-form-label">Valor</label>
+					<div class="col-sm-2">
+						<input type="text" class="form-control" id="valor" />
+					</div>
+				</div>
+	
+				<div class="form-group row">
+					<label for="status" class="col-sm-2 col-form-label">Status</label>
+					<div class="col-sm-2">
+						<select class="form-control" id="status">
+							<option>Pendente</option>
+							<option>Recebido</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-md-2 offset-md-2 col-sm-10">
+						<button type="submit" class="btn btn-primary">Salvar</button>
+					</div>
+				</div>
+			</div>
 		</div>
-
-		<div class="card-body">
-
-			<div class="form-group row">
-				<label for="descricao" class="col-sm-2 col-form-label">Descricao</label>
-				<div class="col-sm-4">
-					<input type="text" class="form-control" id="descricao" placeholder="Descricao">
-				</div>
-			</div>
-			<div class="form-group row">
-				<label for="dataVencimento" class="col-sm-2 col-form-label">Data
-					de Vencimento</label>
-				<div class="col-sm-2">
-					<input type="text" class="form-control" id="dataVencimento" />
-				</div>
-			</div>
-
-			<div class="form-group row">
-				<label for="valor" class="col-sm-2 col-form-label">Valor</label>
-				<div class="col-sm-2">
-					<input type="text" class="form-control" id="valor" />
-				</div>
-			</div>
-
-			<div class="form-group row">
-				<label for="status" class="col-sm-2 col-form-label">Status</label>
-				<div class="col-sm-2">
-					<select class="form-control" id="status">
-						<option>Pendente</option>
-						<option>Recebido</option>
-					</select>
-				</div>
-			</div>
-			<div class="form-group row">
-				<div class="col-md-2 offset-md-2 col-sm-10">
-					<button type="submit" class="btn btn-primary">Salvar</button>
-				</div>
-			</div>
-		</div>
-	</div>
 	</form>
 
 	<body>
