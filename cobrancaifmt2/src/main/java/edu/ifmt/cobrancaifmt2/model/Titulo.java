@@ -1,17 +1,22 @@
 package edu.ifmt.cobrancaifmt2.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.persistence.Id;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
+
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
+
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.Objects;
 
+import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity //Uma entidade JPA
 @Table(name = "titulo") // Nome da tabela no banco de dados
@@ -21,10 +26,11 @@ public class Titulo {
 	@GeneratedValue(strategy=GenerationType.IDENTITY) //estratégia - fica por conta do DB
 	private Long codigo;
 	private String descricao;
+	@DateTimeFormat(pattern="dd/MM/yyyy")
 	@Temporal(TemporalType.DATE)//so da data
 	private Date dataVencimento;
 	private BigDecimal valor;
-	@Enumerated(EnumType.STRING)//salvara no db como String
+	@Enumerated(EnumType.STRING)
 	private StatusTitulo status;
 	
 	public Long getCodigo() {
@@ -83,6 +89,7 @@ public class Titulo {
 		Titulo other = (Titulo) obj;
 		return Objects.equals(codigo, other.codigo);
 	}
-	
+
+
 	
 }
